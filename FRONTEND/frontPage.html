@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>tp01_colombo_alexandre</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+<form class="form">
+  <label class="label">Nom :
+    <input class="controleInput" name="submittedName" type="text" required pattern="[a-zA-Z]*">
+  </label>
+  <label class="label">Prénom :
+    <input class="controleInput" name="submittedSurname" type="text" required pattern="[a-zA-Z]*">
+  </label>
+   <label class="label">Adresse :
+    <input class="controleInput" name="submittedAdress" type="text" required pattern="[0-9a-zA-Z]*">
+  </label>
+  <label class="label">Code Postal :
+    <input class="controleInput" name="submittedPostalCode" type="text" required pattern="[0-9]{5}">
+  </label>
+    <label class="label">Ville :
+    <input class="controleInput" name="submittedTown" type="text" required pattern="[a-zA-Z]*">
+  </label>
+    <label class="label">Téléphone :
+    <input class="controleInput" name="submittedPhone" type="text" required pattern="[0-9]{10}">
+  </label>
+    <label class="label">Email :
+    <input class="controleInput" name="submittedEmail" type="email" required>
+  </label>
+    <label class="label">Civilité :
+    <input name="submittedCivility" type="radio" checked value="Monsieur">M.
+	<input name="submittedCivility" type="radio" value="Madame">Mme
+  </label>
+    <label class="label">Password :
+    <input class="controleInput" name="submittedPassword" type="password" required pattern="[0-9a-zA-Z]*{10-20}">
+  </label class="label">
+    <label class="label">Login :
+    <input class="controleInput" name="submittedLogin" required pattern="[0-9a-zA-Z]*">
+  </label>
+  <button type="submit">Envoyer</button>
+</form>
+
+</body>
+</html>
