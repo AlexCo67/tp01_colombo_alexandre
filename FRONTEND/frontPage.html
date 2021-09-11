@@ -3,45 +3,89 @@
 <head>
   <meta charset="utf-8">
   <title>tp01_colombo_alexandre</title>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-</head>
-<body>
+<!--  <link rel="stylesheet/less" type="text/css" href="styles.less" />
+ <script>
+      less = {
+        async: true
+      };
+    </script>
+   
+  <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script> -->
 
-<form class="form">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+</head>
+
+
+<body>
+<div class="container"> 
+<p> Enregistrement </p>
+</div>
+
+
+<div class="container">
+ <form>
+   <div class="row mb-3">
   <label class="label">Nom :
     <input class="controleInput" name="submittedName" type="text" required pattern="[a-zA-Z]*">
   </label>
+  </div>
+    <div class="row mb-3">
   <label class="label">Prénom :
     <input class="controleInput" name="submittedSurname" type="text" required pattern="[a-zA-Z]*">
   </label>
+  </div>
+    <div class="row mb-3">
    <label class="label">Adresse :
     <input class="controleInput" name="submittedAdress" type="text" required pattern="[0-9a-zA-Z]*">
   </label>
+  </div>
+   <div class="row mb-3">
   <label class="label">Code Postal :
     <input class="controleInput" name="submittedPostalCode" type="text" required pattern="[0-9]{5}">
   </label>
+  </div>
+   <div class="row mb-3">
     <label class="label">Ville :
     <input class="controleInput" name="submittedTown" type="text" required pattern="[a-zA-Z]*">
   </label>
+  </div>
+    <div class="row mb-3">
     <label class="label">Téléphone :
     <input class="controleInput" name="submittedPhone" type="text" required pattern="[0-9]{10}">
   </label>
+  </div>
+    <div class="row mb-3">
     <label class="label">Email :
     <input class="controleInput" name="submittedEmail" type="email" required>
   </label>
+  </div>
+    <div class="row mb-3">
     <label class="label">Civilité :
     <input name="submittedCivility" type="radio" checked value="Monsieur">M.
 	<input name="submittedCivility" type="radio" value="Madame">Mme
   </label>
+  </div>
+    <div class="row mb-3">
     <label class="label">Password :
-    <input class="controleInput" name="submittedPassword" type="password" required pattern="[0-9a-zA-Z]*{10-20}">
+    <input id="pswd" class="controleInput" name="submittedPassword" type="password"> <!--required pattern="[0-9a-zA-Z]{10,20}"-->
   </label class="label">
+  </div>
+    <div class="row mb-3">
     <label class="label">Login :
     <input class="controleInput" name="submittedLogin" required pattern="[0-9a-zA-Z]*">
   </label>
-  <button type="submit">Envoyer</button>
+  </div>
+    <div class="row mb-3">
+  <input class="btn btn-success" type="submit" value="Envoyer">
+  </div>
 </form>
+</div>
 
+  <script src="script.js"></script>
 </body>
 </html>
