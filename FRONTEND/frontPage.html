@@ -23,30 +23,37 @@
    <div class="row mb-3">
   <label class="label">Nom : </label>
     <input class="controleInput" name="submittedName" type="text" required pattern="[a-zA-Z]*">
+	<small class="text-muted">Pas de caractères numériques ou spéciaux</small>
   </div>
     <div class="row mb-3">
   <label class="label">Prénom : </label>
-    <input class="controleInput" name="submittedSurname" type="text" required pattern="[a-zA-Z]*">
+    <input class="controleInput" name="submittedSurname" type="text" required pattern="^[a-zA-Z]*">
+	<small class="text-muted">Pas de caractères numériques ou spéciaux</small>
   </div>
     <div class="row mb-3">
    <label class="label">Adresse : </label>
-    <input class="controleInput" name="submittedAdress" type="text" required pattern="[0-9a-zA-Z]*">
+    <input class="controleInput" name="submittedAdress" type="text" required pattern="^[#.0-9a-zA-Z\s,-]+$**">
+	<small class="text-muted">Numéro et rue</small>
   </div>
    <div class="row mb-3">
   <label class="label">Code Postal : </label>
     <input class="controleInput" name="submittedPostalCode" type="text" required pattern="[0-9]{5}">
+	<small class="text-muted">Code à 5 chiffres</small>
   </div>
    <div class="row mb-3">
     <label class="label">Ville : </label>
     <input class="controleInput" name="submittedTown" type="text" required pattern="[a-zA-Z]*">
+	<small class="text-muted">Pas de caractères numériques ou spéciaux</small>
   </div>
     <div class="row mb-3">
     <label class="label">Téléphone : </label>
     <input class="controleInput" name="submittedPhone" type="text" required pattern="[0-9]{10}">
+	<small class="text-muted">Code à 10 chiffres</small>
   </div>
     <div class="row mb-3">
     <label class="label">Email : </label>
     <input class="controleInput" name="submittedEmail" type="email" required>
+	<small class="text-muted">Adresse e-mail</small>
   </div>
     <div class="row mb-3">
     <label class="label">Civilité : 
@@ -57,6 +64,7 @@
     <div class="row mb-3">
     <label class="label">Login : </label>
     <input class="controleInput" name="submittedLogin" required pattern="[0-9a-zA-Z]*">
+	<small class="text-muted">Pas de caractères spéciaux</small>
   </div>
     <div class="row mb-3">
     <label class="label">Password : </label class="label">
