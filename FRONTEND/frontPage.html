@@ -5,16 +5,7 @@
   <title>tp01_colombo_alexandre</title>
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-<!--  <link rel="stylesheet/less" type="text/css" href="styles.less" />
- <script>
-      less = {
-        async: true
-      };
-    </script>
-   
-  <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script> -->
-
+  <link rel="stylesheet" href="styles.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 
@@ -23,66 +14,59 @@
 
 <body>
 <div class="container"> 
-<p> Enregistrement </p>
+<h1 class="display-3 text-center"> Formulaire d'inscription </h1>
 </div>
 
 
 <div class="container">
  <form>
    <div class="row mb-3">
-  <label class="label">Nom :
+  <label class="label">Nom : </label>
     <input class="controleInput" name="submittedName" type="text" required pattern="[a-zA-Z]*">
-  </label>
   </div>
     <div class="row mb-3">
-  <label class="label">Prénom :
+  <label class="label">Prénom : </label>
     <input class="controleInput" name="submittedSurname" type="text" required pattern="[a-zA-Z]*">
-  </label>
   </div>
     <div class="row mb-3">
-   <label class="label">Adresse :
+   <label class="label">Adresse : </label>
     <input class="controleInput" name="submittedAdress" type="text" required pattern="[0-9a-zA-Z]*">
-  </label>
   </div>
    <div class="row mb-3">
-  <label class="label">Code Postal :
+  <label class="label">Code Postal : </label>
     <input class="controleInput" name="submittedPostalCode" type="text" required pattern="[0-9]{5}">
-  </label>
   </div>
    <div class="row mb-3">
-    <label class="label">Ville :
+    <label class="label">Ville : </label>
     <input class="controleInput" name="submittedTown" type="text" required pattern="[a-zA-Z]*">
-  </label>
   </div>
     <div class="row mb-3">
-    <label class="label">Téléphone :
+    <label class="label">Téléphone : </label>
     <input class="controleInput" name="submittedPhone" type="text" required pattern="[0-9]{10}">
-  </label>
   </div>
     <div class="row mb-3">
-    <label class="label">Email :
+    <label class="label">Email : </label>
     <input class="controleInput" name="submittedEmail" type="email" required>
-  </label>
   </div>
     <div class="row mb-3">
-    <label class="label">Civilité :
-    <input name="submittedCivility" type="radio" checked value="Monsieur">M.
-	<input name="submittedCivility" type="radio" value="Madame">Mme
-  </label>
+    <label class="label">Civilité : 
+	</br><input name="submittedCivility" type="radio" checked value="Monsieur">M.
+	</br><input name="submittedCivility" type="radio" value="Madame">Mme
+	</label>
   </div>
     <div class="row mb-3">
-    <label class="label">Password :
-    <input id="pswd" class="controleInput" name="submittedPassword" type="password">
-  </label class="label">
-  </div>
-    <div class="row mb-3">
-    <label class="label">Login :
+    <label class="label">Login : </label>
     <input class="controleInput" name="submittedLogin" required pattern="[0-9a-zA-Z]*">
-  </label>
   </div>
     <div class="row mb-3">
+    <label class="label">Password : </label class="label">
+    <input id="pswd" class="passwordInput" name="submittedPassword" type="password" required>
+	<small class="text-muted">10-20 caractères, une majuscule, une minuscule et un chiffre minimum</small>
+  </div>
+  <div class="d-flex justify-content-center">
   <input class="btn btn-success" type="submit" value="Envoyer">
   </div>
+
 </form>
 </div>
 
